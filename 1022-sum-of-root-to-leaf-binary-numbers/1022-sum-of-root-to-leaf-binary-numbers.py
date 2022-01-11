@@ -15,16 +15,14 @@ class Solution:
             
             if(root.left == None and root.right == None):
                 
-                answer.append(string)
+                answer[0] += int(string,2)
         
         return
     
     def sumRootToLeaf(self, root: Optional[TreeNode]) -> int:
-        answer = []
+        answer = [0]
         self.helper(root,answer,"")
-        s = 0
-        for i in answer:
-            s += int(i,2)
-        return s
+        return answer[0]
+       
         
         
