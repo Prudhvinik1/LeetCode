@@ -1,10 +1,10 @@
 class Solution:
     def simplifyPath(self, path: str) -> str:
         
-        path = path.split("/")
+        
         stack = []
         
-        for i in path:
+        for i in path.split("/"):
             if(stack and i == ".."):
                 stack.pop()
             elif i not in ['.','','..']:
