@@ -8,6 +8,6 @@ class Solution:
             if(stack and i == ".."):
                 stack.pop()
             elif i not in ['.','','..']:
-                stack.append(i)
+                stack.append(i)   
         
-        return "/" + "/".join(stack)
+        return "/" + "/".join(stack) 
